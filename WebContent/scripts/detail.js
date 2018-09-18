@@ -58,10 +58,10 @@ function getDetail(id) {
    
    $.getJSON(url,{id : id}, function(r) {
       $('.detail-header-name').html(r.name);
-      $('detail-header-city-name').html(r.cityName);
+      $('.detail-header-city-name').html(r.cityName);
       $('.detail-desc-text').html(r.desc);
       
-      var $gallery = $('detail-images');
+      var $gallery = $('#detail-images');
       var images = r.subImagesList;
       for(var i = 0; i < images.length; i++){
          var $image = $('<img src="' + images[i] + '"/>');
