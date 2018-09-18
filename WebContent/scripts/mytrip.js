@@ -51,10 +51,11 @@ function generateMyTripList(list) {
          map : map
       });
       markers[myTrip.id] = marker;
-      bounds.extends(pos);
+      bounds.extend(pos);
    }
    map.fitBounds(bounds);
 }
+
 function removeFromList(list, id) {
       var index = -1;
       for (var i = 0; i < list.length; i++){
@@ -68,6 +69,13 @@ function removeFromList(list, id) {
       }
       return list;
    }
+
 function showMap() {
-   map = new google.maps.Map(document.getElementById('map'));
-}
+	   map = new google.maps.Map(document.getElementById('map'), {
+	      zoom : 12,
+	      center : {
+	         lat : 33.3617,
+	         lng : 126.5259
+	      }
+	   });
+	}
