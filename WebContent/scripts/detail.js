@@ -13,7 +13,7 @@ $(function() {
 });
 
 function showMap() {
-   map = new kakao.maps.Map(document.getElemenById('map'),{
+   map = new daum.maps.Map(document.getElemenById('map'),{
       zoom : 12, 
       center:{
          lat : 33.3617,
