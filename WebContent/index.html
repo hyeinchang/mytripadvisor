@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>My trip Advisor</title>
-<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css"/>
+<title>Insert title here</title>
+<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css" />
 <link rel="stylesheet" href="styles/styles.css" />
 <script src="libs/jquery-3.3.1.min.js"></script>
 <script src="libs/jquery-ui/jquery-ui.min.js"></script>
 <script src="scripts/scripts.js"></script>
-<script type="text/javascript" src="scripts/login.js"></script>
-<script type="text/javascript" src="scripts/mytrip.js"></script>
 
 </head>
 <body>
@@ -18,9 +16,8 @@
          <div>
             <a href="index.html"><span></span></a>
             <div class="menu-items right">
-               <a href="mytrip.html">마이트립</a> 
-               <img src="images/line_maintop_gray.png" /> 
-               <a href="register.html">회원가입</a>
+               <a href="mytrip.html">마이트립</a> <img
+                  src="images/line_maintop_gray.png" /> <a href="register.html">회원가입</a>
             </div>
          </div>
       </div>
@@ -49,7 +46,21 @@
                </div>
             </form>
          </div>
+         
+         <div id="list-bg">
+            <div id="list-panel"></div>
+         </div>
       </div>
+      <div id="list-item-template" class="list-item">
+         <img class="list-item-image" />
+         <div class="list-item-desc">
+            <div class="list-item-name"></div>
+            <div class="list-item-city">
+               <img src="images/icon_list_location.png" />
+               <div class="list-item-city-name" />
+               </div>
+            </div>
+         </div>
       </div>
 </body>
 </html>
